@@ -1,1 +1,1 @@
-"# scoop-bucket" 
+# scoop-bucket
