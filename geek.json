@@ -1,7 +1,8 @@
 {
-    "version": "1.4.5.124",
+    "version": "1.4.5.125",
     "url": "https://geekuninstaller.com/geek.7z",
     "bin": "geek.exe",
+    "hash": "c327cfa5bea8315961e060d04cfe041cfa5318054b738bc58547588f08041a24",
     "autoupdate": {
         "url": "https://geekuninstaller.com/geek.7z"
     },
