@@ -1,7 +1,6 @@
 {
     "version": "1.4.5.125",
     "url": "https://geekuninstaller.com/geek.7z",
-    "extract_dir": "geek",
     "bin": "geek.exe",
     "autoupdate": {
         "url": "https://geekuninstaller.com/geek.7z"
@@ -9,5 +8,11 @@
     "checkver": {
         "url": "https://geekuninstaller.com/download",
         "re": "<b>([\\d\\.]*)<\\/b>.*\\[[\\d\\w\\s]*\\]"
-    }
+    },
+    "shortcuts": [
+        [
+            "greek.exe",
+            "Geek Uninstaller"
+        ]
+    ]
 }
