@@ -1,11 +1,11 @@
 {
     "homepage": "https://getpostman.com/",
-    "version": "5.3.0",
+    "version": "5.5.3",
     "license": "Commercial",
     "architecture": {
         "64bit": {
-            "url": "https://dl.pstmn.io/download/5.3.0/Postman-win64-5.3.0-full.nupkg#/dl.7z",
-            "hash": ""
+            "url": "https://dl.pstmn.io/download/5.5.3/Postman-win64-5.5.3-full.nupkg#/dl.7z",
+            "hash": "f156fa5dd8a79e0e8edd1f7501f0bc2eb5cec777c997dbc91311ae7473fc25e8"
         }
     },
     "extract_dir": "lib\\net45",
@@ -16,9 +16,9 @@
             "Postman"
         ]
     ],
-    "checkver" : {
+    "checkver": {
         "url": "https://dl.pstmn.io/changelog?channel=stable&platform=win",
-        "re": "\\\"name\\\"\\s*\\:\\s*\\\"([\\d\\.]+)\\\""
+        "jp": "$.changelog[0].name"
     },
     "autoupdate": {
         "architecture": {
