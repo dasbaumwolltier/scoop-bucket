@@ -1,0 +1,12 @@
+{
+    "version": "16.21",
+    "url": "https://download.sysinternals.com/files/ProcessExplorer.zip",
+    "hash": "",
+    "bin": "procexp.exe",
+    "shortcuts": [
+        [
+            "Process Explorer",
+            "procexp.exe"
+        ]
+    ]
+}
