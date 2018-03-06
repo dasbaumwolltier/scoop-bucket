@@ -1,0 +1,29 @@
+{
+    "homepage": "https://downloads.codelite.org/",
+    "version": "12.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.codelite.org/downloads.php?windows_64#installer",
+            "hash": "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1"
+        }
+    },
+    "pre_install": [
+        "7z x installer",
+        "Remove-Item installer",
+        "Move-Item codelite* installer"
+    ],
+    "innosetup": true,
+    "bin": "codelite.exe",
+    "shortcuts": [
+        [
+            "Codelite",
+            "codelite.exe"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://downloads.codelite.org/downloads.php?windows_64"
+    },
+    "checkver": {
+        "github": "https://github.com/eranif/codelite"
+    }
+}
