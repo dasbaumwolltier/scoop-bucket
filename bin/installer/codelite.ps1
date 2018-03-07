@@ -31,7 +31,7 @@ Remove-Item -r -force "$path\_scoop_unpack"
 # Remove-Item -r -force "$path\_scoop_extract"
 Remove-Item -r -force "$path\innounp.log"
 
-Remove-Item "$path\$installer"
+# Remove-Item "$path\$installer"
 Write-Host "  done."
 
 # Remove-Item $path\codelite.7z

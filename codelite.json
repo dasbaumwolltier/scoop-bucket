@@ -20,7 +20,7 @@
     "installer": {
         "args": [
             "$dir",
-            "codelite",
+            "codelite.exe",
             "$version"
         ]
     },
