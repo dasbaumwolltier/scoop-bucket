@@ -27,8 +27,8 @@
     "bin": "codelite.exe",
     "shortcuts": [
         [
-            "Codelite",
-            "codelite.exe"
+            "codelite.exe",
+            "Codelite"
         ]
     ],
     "autoupdate": {
