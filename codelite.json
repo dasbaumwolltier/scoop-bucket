@@ -3,16 +3,22 @@
     "version": "12.0",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.codelite.org/downloads.php?windows_64#installer",
+            "url": "https://downloads.codelite.org/downloads.php?windows_64#/codelite.7z",
             "hash": "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1"
         }
     },
-    "pre_install": [
-        "7z x installer",
-        "Remove-Item installer",
-        "Move-Item codelite* installer"
+    "depends": [
+        "7zip",
+        "innounp"
     ],
-    "innosetup": true,
+    "installer": {
+        "args": [
+            "$dir",
+            "codelite",
+            "$version"
+        ],
+        "keep": true
+    },
     "bin": "codelite.exe",
     "shortcuts": [
         [
