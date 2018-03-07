@@ -17,8 +17,8 @@ Param($path, $installer, $version)
 
 Write-Host "- Extracting codelite innosetup..."
 
-Move-Item "codelite*.exe" "codelite.exe"
-innounp -x -d"$path\_scoop_unpack" "codelite.exe" > "$path\innounp.log"
+Move-Item "$path\codelite*.exe" "$path\codelite.exe"
+innounp -x -d"$path\_scoop_unpack" "$path\codelite.exe" > "$path\innounp.log"
 
 if($LASTEXITCODE -ne 0)
 {
