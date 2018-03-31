@@ -2,7 +2,7 @@
     "homepage": "https://mh-nexus.de/en/hxd/",
     "version": "1.7.7.0",
     "url": "http://mh-nexus.de/downloads/HxDen.zip",
-    "hash": "94e57a52e4d3eca6576bc15a99e884b6cdd5b03a",
+    "hash": "ec8ab9522eefd2db19a18203e4195430a12c0c9e49b1e15cf195cee385da0d0c",
     "bin": "hxd.exe",
     "shortcuts": [
       [
