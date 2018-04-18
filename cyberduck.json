@@ -4,15 +4,10 @@
     "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-6.4.6.27773.msi",
     "hash": "50e1c02ec7571e528d48c995ff01152853cdd6908d9c33b82387ff918a5fc362",
     "extract_dir": "Cyberduck",
-    "bin": [
-        [
-            "product.exe",
-            "cyberduck"
-        ]
-    ],
+    "bin": "Cyberduck.exe",
     "shortcuts": [
         [
-            "product.exe",
+            "Cyberduck.exe",
             "Cyberduck"
         ]
     ],
