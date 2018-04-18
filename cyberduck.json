@@ -1,0 +1,25 @@
+{
+    "homepage": "https://cyberduck.io/",
+    "version": "6.4.6.27773",
+    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-6.4.6.27773.msi",
+    "hash": "50e1c02ec7571e528d48c995ff01152853cdd6908d9c33b82387ff918a5fc362",
+    "bin": [
+        [
+            "product.exe",
+            "cyberduck"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "product.exe",
+            "Cyberduck"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-$version.msi"
+    },
+    "checkver": {
+        "url": "https://update.cyberduck.io/windows/",
+        "re": "<img src=\"\\/img\\/exe.*<a href=\"Cyberduck-Installer-([\\d\\.]*)\\.msi\">"
+    }
+}
