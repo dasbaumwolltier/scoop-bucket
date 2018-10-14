@@ -16,7 +16,7 @@
     ],
     "installer": {
         "script": [
-          "& \"$dir\\_scoop_unpack\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$dir\"",
+          "& \"$dir\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$dir\"",
           "if($LASTEXITCODE -ne 0) { exit \"Exit code was $LASTEXITCODE\" }",
           "Remove-Item -r -force \"$path\\_scoop_unpack\""
         ]
