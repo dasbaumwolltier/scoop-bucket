@@ -2,12 +2,10 @@
     "homepage": "https://mh-nexus.de/en/hxd/",
     "version": "2.1",
     "url": [
-        "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z",
-        "https://raw.githubusercontent.com/dasbaumwolltier/scoop-bucket/master/bin/installer/hxd.ps1"
+        "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z"
     ],
     "hash": [
         "398e32a74f133c232c2c49dca477bb376e871474f2277f46cf132521dbd6700a",
-        "a39c9dd3e5cf1baad0b77bccb7fbd61838145c597a3d25bb6f633e2608787da4"
     ],
     "bin": "HxD.exe",
     "shortcuts": [
@@ -17,10 +15,10 @@
         ]
     ],
     "installer": {
-        "args": [
-            "$dir",
-            "HxDSetup.exe",
-            "$version"
+        "script": [
+          "& \"$path\\_scoop_unpack\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$path\"",
+          "if($LASTEXITCODE -ne 0) { exit \"Exit code was $LASTEXITCODE\" }",
+          "Remove-Item -r -force \"$path\\_scoop_unpack\""
         ]
     },
     "autoupdate": {
