@@ -5,7 +5,7 @@
         "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z"
     ],
     "hash": [
-        "398e32a74f133c232c2c49dca477bb376e871474f2277f46cf132521dbd6700a",
+        "398e32a74f133c232c2c49dca477bb376e871474f2277f46cf132521dbd6700a"
     ],
     "bin": "HxD.exe",
     "shortcuts": [
@@ -16,7 +16,7 @@
     ],
     "installer": {
         "script": [
-          "& \"$path\\_scoop_unpack\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$path\"",
+          "& \"$path\\_scoop_unpack\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$dir\"",
           "if($LASTEXITCODE -ne 0) { exit \"Exit code was $LASTEXITCODE\" }",
           "Remove-Item -r -force \"$path\\_scoop_unpack\""
         ]
