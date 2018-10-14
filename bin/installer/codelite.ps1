@@ -1,4 +1,4 @@
-Param($path)
+Param($path, $installer, $version)
 
 # $tmpPath = "$path\_scoop_extract"
 

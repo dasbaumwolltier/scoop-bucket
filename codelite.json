@@ -19,7 +19,9 @@
     ],
     "installer": {
         "args": [
-            "$dir"
+            "$dir",
+            "codelite.exe",
+            "$version"
         ]
     },
     "bin": "codelite.exe",

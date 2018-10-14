@@ -10,7 +10,7 @@
     "depends": [
         "7zip"
     ],
-    "bin": "codelite.exe",
+    "bin": "wxMaxima/wxmaxima.exe",
     "shortcuts": [
         [
             "wxMaxima/wxmaxima.exe",
