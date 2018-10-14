@@ -1,13 +1,31 @@
 {
     "homepage": "https://mh-nexus.de/en/hxd/",
     "version": "1.7.7.0",
-    "url": "http://mh-nexus.de/downloads/HxDen.zip",
-    "hash": "ec8ab9522eefd2db19a18203e4195430a12c0c9e49b1e15cf195cee385da0d0c",
-    "bin": "hxd.exe",
+    "url": [
+      "https://mh-nexus.de/downloads/HxDen.zip#HxD.7z",
+      ""
+    ],
+    "hash": [
+      "ec8ab9522eefd2db19a18203e4195430a12c0c9e49b1e15cf195cee385da0d0c",
+      ""
+    ],
+    "bin": "HxD.exe",
     "shortcuts": [
       [
-        "hxd.exe",
+        "HxD.exe",
         "HxD"
       ]
-    ]
+    ],
+    "installer" : {
+      "args": [
+        "$dir"
+      ]
+    },
+    "autoupdate" : {
+      "url": "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z"
+    },
+    "checkver" : {
+      "url": "https://mh-nexus.de/en/programs.php",
+      "re": "Version.*\\n.*\\n.*>([\\d.]+).*"
+    }
   }

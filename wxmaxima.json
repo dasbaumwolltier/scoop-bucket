@@ -1,0 +1,27 @@
+{
+    "homepage": "https://wxmaxima-developers.github.io/wxmaxima/",
+    "version": "5.41.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/5.41.0-Windows/maxima-clisp-sbcl-5.41.0a-win64.exe#maxima.7z",
+            "hash": "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1"
+        }
+    },
+    "depends": [
+        "7zip"
+    ],
+    "bin": "codelite.exe",
+    "shortcuts": [
+        [
+            "wxMaxima/wxmaxima.exe",
+            "wxMaxima"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/${version}-Windows/maxima-clisp-sbcl-${version}a-win64.exe#maxima.7z"
+    },
+    "checkver": {
+        "url": "https://wxmaxima-developers.github.io/wxmaxima/download.html",
+        "re": "Windows.*\\n.*\\n.*\\n.*wxMaxima.*\\n.*Maxima ([\\d.]+)<\\/li>"
+    }
+}
