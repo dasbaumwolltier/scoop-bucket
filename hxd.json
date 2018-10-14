@@ -14,6 +14,10 @@
             "HxD"
         ]
     ],
+    "depends": [
+      "7zip",
+      "innounp"
+    ],
     "installer": {
         "script": [
           "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
