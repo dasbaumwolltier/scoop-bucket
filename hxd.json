@@ -16,9 +16,11 @@
     ],
     "installer": {
         "script": [
-          "& \"$dir\\HxDSetup.exe\" \"/VERYSILENT /NOICONS /NORESTART /SUPPRESSMSGBOXES /TYPE=portable /DIR=$dir\"",
-          "if($LASTEXITCODE -ne 0) { exit \"Exit code was $LASTEXITCODE\" }",
-          "Remove-Item -r -force \"$path\\_scoop_unpack\""
+          "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
+          "innounp -x -d\"$dir\\_scoop_unpack\" $dir\\HxDSetup.exe > $dir\\innounp.log",
+          "Move-Item -path \"$dir\\_scoop_unpack\\{app}\\HxD64,2.exe\" -dest $dir\\HxD.exe -force",
+          "Remove-Item -r -force \"$dir\\_scoop_unpack\"",
+          "Remove-Item -r -force $dir\\innounp.log"
         ]
     },
     "autoupdate": {

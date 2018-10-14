@@ -18,10 +18,13 @@
         "innounp"
     ],
     "installer": {
-        "args": [
-            "$dir",
-            "codelite.exe",
-            "$version"
+        "script" : [
+            "Move-Item -path \"$dir\\codelite*.exe\" -dest \"$dir\\codelite.exe\"",
+            "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
+            "innounp -x -d\"$dir\\_scoop_unpack\" $dir\\codelite.exe > $dir\\innounp.log",
+            "Get-ChildItem \"$dir\\_scoop_unpack\\{app}\" -r | Move-Item -dest \"$dir\" -force",
+            "Remove-Item -r -force \"$dir\\_scoop_unpack\"",
+            "Remove-Item -r -force $dir\\innounp.log"
         ]
     },
     "bin": "codelite.exe",
