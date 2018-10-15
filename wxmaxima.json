@@ -3,22 +3,25 @@
     "version": "5.41.0",
     "architecture": {
         "64bit": {
-            "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/5.41.0-Windows/maxima-clisp-sbcl-5.41.0a-win64.exe#maxima.7z",
+            "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/5.41.0-Windows/maxima-clisp-sbcl-5.41.0a-win64.exe",
             "hash": "000f73309b75333195ce4e18b41537f12b7f683b86aa01ec26f97c933f7e02c5"
         }
     },
-    "depends": [
-        "7zip"
-    ],
     "bin": "wxMaxima/wxmaxima.exe",
-    "shortcuts": [
-        [
-            "wxMaxima/wxmaxima.exe",
-            "wxMaxima"
+    "installer" : {
+        "args" : [
+            "/S",
+            "/D=$dir"
         ]
-    ],
+    },
+    "uninstaller" : {
+        "file" : "Uninstall.exe",
+        "args" : [
+            "/S"
+        ]
+    },
     "autoupdate": {
-        "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/${version}-Windows/maxima-clisp-sbcl-${version}a-win64.exe#maxima.7z"
+        "url": "https://netcologne.dl.sourceforge.net/project/maxima/Maxima-Windows/${version}-Windows/maxima-clisp-sbcl-${version}a-win64.exe"
     },
     "checkver": {
         "url": "https://wxmaxima-developers.github.io/wxmaxima/download.html",
