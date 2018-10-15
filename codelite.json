@@ -4,12 +4,10 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://downloads.codelite.org/downloads.php?windows_64#/codelite.7z",
-                "https://raw.githubusercontent.com/dasbaumwolltier/scoop-bucket/master/bin/installer/codelite.ps1"
+                "https://downloads.codelite.org/downloads.php?windows_64#/codelite.7z"
             ],
             "hash": [
-                "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1",
-                "F8639B759D0371AA358E27AED5FB60D7DC46C5E04AAB96B8A598A3686EF16A66"
+                "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1"
             ]
         }
     },
