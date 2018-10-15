@@ -10,6 +10,12 @@
                     "procexp64.exe",
                     "procexp"
                 ]
+            ],
+            "shortcuts" : [
+                [
+                    "procexp64.exe",
+                    "Process Explorer"
+                ]
             ]
         },
         "32bit": {
@@ -19,6 +25,12 @@
                 [
                     "procexp.exe",
                     "procexp"
+                ]
+            ],
+            "shortcuts" : [
+                [
+                    "procexp.exe",
+                    "Process Explorer"
                 ]
             ]
         }
