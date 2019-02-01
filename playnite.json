@@ -1,6 +1,6 @@
 {
     "homepage": "https://playnite.link/",
-    "version": "4.67",
+    "version": "4.66",
     "url": "https://github.com/JosefNemec/Playnite/releases/download/4.66/Playnite466.exe",
     "hash": "1cd5be1c978659bd2481c4beaacf9bcad2e8fc76fee5d356a6cea7e2e4be598d",
     "depends": "innounp",
