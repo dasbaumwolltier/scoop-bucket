@@ -1,0 +1,24 @@
+{
+    "homepage": "https://playnite.link/",
+    "version": "4.67",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.66/Playnite466.exe",
+    "hash": "1cd5be1c978659bd2481c4beaacf9bcad2e8fc76fee5d356a6cea7e2e4be598d",
+    "depends": "innounp",
+    "shortcuts": [
+        [
+            "PlayniteUI.exe",
+            "Playnite"
+        ]
+    ],
+    "innosetup": true,
+    "persist": [
+        "library"
+    ],
+    "autoupdate": {
+        "url": "https://github.com/JosefNemec/Playnite/releases/download/$matchVersion/$matchExename"
+    },
+    "checkver": {
+        "url": "https://github.com/JosefNemec/Playnite/releases/latest",
+        "re": "<a\\s*href=\".*\\/Playnite.*\">(?<version>4\\.\\d{2})<\\/a>[\\s\\S]*?(?<exename>Playnite\\d{3}\\.exe)"
+    }
+}
