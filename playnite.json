@@ -12,7 +12,8 @@
     ],
     "innosetup": true,
     "persist": [
-        "library"
+        "library",
+        "browsercache"
     ],
     "autoupdate": {
         "url": "https://github.com/JosefNemec/Playnite/releases/download/$matchVersion/$matchExename"
