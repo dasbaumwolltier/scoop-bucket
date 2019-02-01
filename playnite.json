@@ -13,7 +13,11 @@
     "innosetup": true,
     "persist": [
         "library",
-        "browsercache"
+        "browsercache",
+        "config.json"
+    ],
+    "pre_install" : [
+        "if(!(test-path \"$dir\\Everything.db\")) { Add-Content \"$dir\\config.json\" $null }"
     ],
     "autoupdate": {
         "url": "https://github.com/JosefNemec/Playnite/releases/download/$matchVersion/$matchExename"
