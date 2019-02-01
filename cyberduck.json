@@ -1,8 +1,8 @@
 {
     "homepage": "https://cyberduck.io/",
-    "version": "6.8.3.29107",
-    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-6.8.3.29107.msi",
-    "hash": "e5aad47d0fbd89b298d03d83aa9a4d4bc117287956adcfb5b3b4099d036426a9",
+    "version": "6.9.0.29768",
+    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-6.9.0.29768.msi",
+    "hash": "8ef151252add87e3dc791233bdb609d036e9a10c27b366cdfc68138e5bec4069",
     "extract_dir": "Cyberduck",
     "bin": "Cyberduck.exe",
     "shortcuts": [

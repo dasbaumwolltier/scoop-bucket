@@ -1,12 +1,8 @@
 {
     "homepage": "https://mh-nexus.de/en/hxd/",
-    "version": "2.1",
-    "url": [
-        "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z"
-    ],
-    "hash": [
-        "398e32a74f133c232c2c49dca477bb376e871474f2277f46cf132521dbd6700a"
-    ],
+    "version": "2.2",
+    "url": "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z",
+    "hash": "5907528f313805cd7278589d00b9bdb05ffbc48ecbbb029725b137a2cc1ec67d",
     "bin": "HxD.exe",
     "shortcuts": [
         [
@@ -15,16 +11,16 @@
         ]
     ],
     "depends": [
-      "7zip",
-      "innounp"
+        "7zip",
+        "innounp"
     ],
     "installer": {
         "script": [
-          "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
-          "innounp -x -d\"$dir\\_scoop_unpack\" $dir\\HxDSetup.exe > $dir\\innounp.log",
-          "Move-Item -path \"$dir\\_scoop_unpack\\{app}\\HxD64,2.exe\" -dest $dir\\HxD.exe -force",
-          "Remove-Item -r -force \"$dir\\_scoop_unpack\"",
-          "Remove-Item -r -force $dir\\innounp.log"
+            "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
+            "innounp -x -d\"$dir\\_scoop_unpack\" $dir\\HxDSetup.exe > $dir\\innounp.log",
+            "Move-Item -path \"$dir\\_scoop_unpack\\{app}\\HxD64,2.exe\" -dest $dir\\HxD.exe -force",
+            "Remove-Item -r -force \"$dir\\_scoop_unpack\"",
+            "Remove-Item -r -force $dir\\innounp.log"
         ]
     },
     "autoupdate": {
