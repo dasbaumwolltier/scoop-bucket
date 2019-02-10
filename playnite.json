@@ -1,8 +1,8 @@
 {
     "homepage": "https://playnite.link/",
-    "version": "4.67",
-    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.67/Playnite467.exe",
-    "hash": "66d7ef069d9f0c3f836dd9138adbb2f38e12876348f12946813823f553c21d38",
+    "version": "4.72",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.72/Playnite472.exe",
+    "hash": "d826029c886554570fa2075ff704b6dd551c138aef8d07054b3b973428eaa318",
     "depends": "innounp",
     "shortcuts": [
         [
@@ -16,9 +16,7 @@
         "browsercache",
         "config.json"
     ],
-    "pre_install" : [
-        "if(!(test-path \"$dir\\Everything.db\")) { Add-Content \"$dir\\config.json\" $null }"
-    ],
+    "pre_install": "if(!(test-path \"$dir\\Everything.db\")) { Add-Content \"$dir\\config.json\" $null }",
     "autoupdate": {
         "url": "https://github.com/JosefNemec/Playnite/releases/download/$matchVersion/$matchExename"
     },
