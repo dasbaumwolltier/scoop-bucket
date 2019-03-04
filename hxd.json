@@ -1,8 +1,8 @@
 {
     "homepage": "https://mh-nexus.de/en/hxd/",
-    "version": "2.2",
+    "version": "2.2.1",
     "url": "https://mh-nexus.de/downloads/HxDSetup.zip#HxD.7z",
-    "hash": "5907528f313805cd7278589d00b9bdb05ffbc48ecbbb029725b137a2cc1ec67d",
+    "hash": "2bb4f5dd7effa7f32bad9bed88f8802a86d75de169d5ea0658eeba280132c2f8",
     "bin": "HxD.exe",
     "shortcuts": [
         [

@@ -1,8 +1,8 @@
 {
     "homepage": "https://playnite.link/",
-    "version": "4.72",
-    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.72/Playnite472.exe",
-    "hash": "d826029c886554570fa2075ff704b6dd551c138aef8d07054b3b973428eaa318",
+    "version": "4.74",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.74/Playnite474.exe",
+    "hash": "2e0cc42039322d733b3a55143f2819b2daa97151ecde6a49d79164a78f00f03f",
     "depends": "innounp",
     "shortcuts": [
         [
