@@ -1,8 +1,8 @@
 {
     "homepage": "https://playnite.link/",
-    "version": "4.74",
-    "url": "https://github.com/JosefNemec/Playnite/releases/download/4.74/Playnite474.exe",
-    "hash": "2e0cc42039322d733b3a55143f2819b2daa97151ecde6a49d79164a78f00f03f",
+    "version": "5.5",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/5.5/Playnite55.exe",
+    "hash": "58b0024e149d5eba7e3c564ef1e8660ffc6899766b9d00721aee33b1052a4d69",
     "depends": "innounp",
     "shortcuts": [
         [
@@ -22,6 +22,6 @@
     },
     "checkver": {
         "url": "https://github.com/JosefNemec/Playnite/releases/latest",
-        "re": "<a\\s*href=\".*\\/Playnite.*\">(?<version>4\\.\\d{2})<\\/a>[\\s\\S]*?(?<exename>Playnite\\d{3}\\.exe)"
+        "re": "<a\\shref=\".*Playnite.*\\/tag\\/(?<version>[\\d\\.\\w]*)\"[\\s\\S]*?(?<exename>Playnite[\\d\\.\\w]+\\.exe)"
     }
 }

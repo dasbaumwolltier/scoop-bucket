@@ -1,14 +1,10 @@
 {
     "homepage": "https://downloads.codelite.org/",
-    "version": "12.0",
+    "version": "13.0",
     "architecture": {
         "64bit": {
-            "url": [
-                "https://downloads.codelite.org/downloads.php?windows_64#/codelite.7z"
-            ],
-            "hash": [
-                "51cc36bf92945ee079c1525f4e7a24e842271795afdd406233872aef6f956af1"
-            ]
+            "url": "https://downloads.codelite.org/downloads.php?windows_64",
+            "hash": "3fc4ed1ec9296d0b6b68ed9c6ba342ccb72357c9d35d5d4822f9763abf5861eb"
         }
     },
     "depends": [
@@ -16,7 +12,7 @@
         "innounp"
     ],
     "installer": {
-        "script" : [
+        "script": [
             "Move-Item -path \"$dir\\codelite*.exe\" -dest \"$dir\\codelite.exe\"",
             "New-Item -ItemType Directory \"$dir\\_scoop_unpack\" | Out-Null",
             "innounp -x -d\"$dir\\_scoop_unpack\" $dir\\codelite.exe > $dir\\innounp.log",

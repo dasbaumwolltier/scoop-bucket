@@ -1,10 +1,10 @@
 {
     "homepage": "https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx",
-    "version": "16.22",
+    "version": "16.26",
     "architecture": {
         "64bit": {
             "url": "https://download.sysinternals.com/files/ProcessExplorer.zip",
-            "hash": "d393f062091c4fcf720ce0cad56520a920ffcc9412cdc7941150e3bb3fc4fefa",
+            "hash": "dc422a6ca2872207e8d0ef55ba4291998c8923efe847ba9e025c610090ad20be",
             "bin": [
                 [
                     "procexp64.exe",
@@ -20,7 +20,7 @@
         },
         "32bit": {
             "url": "https://download.sysinternals.com/files/ProcessExplorer.zip",
-            "hash": "d393f062091c4fcf720ce0cad56520a920ffcc9412cdc7941150e3bb3fc4fefa",
+            "hash": "dc422a6ca2872207e8d0ef55ba4291998c8923efe847ba9e025c610090ad20be",
             "bin": [
                 [
                     "procexp.exe",
