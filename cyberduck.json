@@ -1,8 +1,8 @@
 {
     "homepage": "https://cyberduck.io/",
-    "version": "7.0.2.30998",
-    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-7.0.2.30998.msi",
-    "hash": "c3d256716598389e40aefdbff0cf348baea768f20a43fccaace7461da8002631",
+    "version": "7.4.1.33065",
+    "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-7.4.1.33065.msi",
+    "hash": "316ea55361a89b7a2ea67a9f609b6a6f882b2afd9dc10558791daad3895070c5",
     "extract_dir": "Cyberduck",
     "bin": "Cyberduck.exe",
     "shortcuts": [
@@ -15,7 +15,7 @@
         "url": "https://update.cyberduck.io/windows/Cyberduck-Installer-$version.msi"
     },
     "checkver": {
-        "url": "https://update.cyberduck.io/windows/",
-        "re": "<img src=\"\\/img\\/exe.*<a href=\"Cyberduck-Installer-([\\d\\.]*)\\.msi\">"
+        "url": "https://cyberduck.io/download/",
+        "re": "https://update.cyberduck.io/windows/Cyberduck-Installer-(.*?).exe"
     }
 }

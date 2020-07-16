@@ -1,10 +1,10 @@
 {
     "homepage": "https://wxmaxima-developers.github.io/wxmaxima/",
-    "version": "5.43.0",
+    "version": "5.44.0",
     "architecture": {
         "64bit": {
-            "url": "https://datapacket.dl.sourceforge.net/project/maxima/Maxima-Windows/5.43.0-Windows/maxima-clisp-sbcl-5.43.0-win64.exe",
-            "hash": "sha1:21b872907ef650a6e6c9c59612af65127bc17331"
+            "url": "https://datapacket.dl.sourceforge.net/project/maxima/Maxima-Windows/5.44.0-Windows/maxima-clisp-sbcl-5.44.0-win64.exe",
+            "hash": "sha1:96126159377ccba7b4c3cef877554b211636b7f4"
         }
     },
     "bin": "wxMaxima/wxmaxima.exe",
@@ -22,7 +22,7 @@
         "url": "https://datapacket.dl.sourceforge.net/project/maxima/Maxima-Windows/$version-Windows/maxima-clisp-sbcl-$version-win64.exe"
     },
     "checkver": {
-        "url": "https://wxmaxima-developers.github.io/wxmaxima/download.html",
-        "re": "Windows.*\\n.*\\n.*\\n.*wxMaxima.*\\n.*Maxima (?<version>[\\d.]+)<\\/li>"
+        "url": "https://sourceforge.net/projects/maxima/files/Maxima-Windows/",
+        "re": "maxima-clisp-sbcl-([\\d.]+)-win64\\.exe \\([\\d.]+ MB\\)"
     }
 }
