@@ -1,0 +1,24 @@
+{
+    "homepage": "http://mayakron.altervista.org/support/acrylic/Home.htm",
+    "version": "1.2.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/acrylic/Acrylic/1.2.2/Acrylic-Portable.zip",
+            "hash": "sha1:86a26c3e2df7c1548a36661c4c45b97fc0bb3dc3"
+        }
+    },
+    "depends": "7zip",
+    "shortcuts": [
+        [
+            "AcrylicUI.exe",
+            "AcrylicUI"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/acrylic/Acrylic/$version/Acrylic-Portable.zip"
+    },
+    "checkver": {
+        "url": "https://sourceforge.net/projects/acrylic/files/Acrylic/",
+        "re": "class=\"name\">(.*?)<"
+    }
+}
